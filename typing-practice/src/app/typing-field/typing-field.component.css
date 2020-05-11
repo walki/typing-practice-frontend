@@ -1,0 +1,12 @@
+.editor {
+  border: 1px solid red;
+  width: 800px;
+  min-height: 600px;
+  color: rgb(0, 32, 0);
+  font-weight: 400;
+  font-size: large;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
