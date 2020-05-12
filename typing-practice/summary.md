@@ -27,6 +27,6 @@
 
 [] Feature 6: Look at previous days, with stats
 
-[] 7: Fix up the Header, it sucks
+[x] 7: Fix up the Header, it sucks
 
-[] 8: Restyle the border on the edit field.
+[x] 8: Restyle the border on the edit field.

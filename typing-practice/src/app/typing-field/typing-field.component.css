@@ -1,7 +1,7 @@
 .editor {
-  border: 1px solid red;
+  border: 1px solid rgba(0,0,100, 0.5);
   width: 800px;
-  min-height: 600px;
+  min-height: 700px;
   color: rgb(0, 32, 0);
   font-weight: 400;
   font-size: large;
@@ -9,4 +9,12 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
+
+  overflow: auto;
+
+}
+
+.editor:focus {
+  border: 2px solid rgba(0,0,100, 0.5);
+  outline-style: none;
 }

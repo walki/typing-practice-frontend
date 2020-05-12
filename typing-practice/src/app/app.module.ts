@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { TypingFieldComponent } from './typing-field/typing-field.component';
 import { CurrentStatsComponent } from './current-stats/current-stats.component';
 import { PreviousDaysComponent } from './previous-days/previous-days.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PreviousDaysComponent } from './previous-days/previous-days.component';
     HeaderComponent,
     TypingFieldComponent,
     CurrentStatsComponent,
-    PreviousDaysComponent
+    PreviousDaysComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
