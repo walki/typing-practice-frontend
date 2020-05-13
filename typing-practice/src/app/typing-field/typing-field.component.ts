@@ -12,7 +12,6 @@ export class TypingFieldComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event']) updateEditor(event: KeyboardEvent) {
     const editorValue = this.editorView.nativeElement.innerText;
-    console.log(editorValue);
     this.statService.setPage(editorValue);
   }
 
