@@ -10,6 +10,7 @@ import { TypingFieldComponent } from './typing-field/typing-field.component';
 import { CurrentStatsComponent } from './current-stats/current-stats.component';
 import { PreviousDaysComponent } from './previous-days/previous-days.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

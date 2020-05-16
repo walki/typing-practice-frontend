@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TypingStatsService } from '../typing-stats.sevice';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-typing-field',
@@ -8,17 +9,14 @@ import { TypingStatsService } from '../typing-stats.sevice';
 })
 export class TypingFieldComponent implements OnInit {
 
-  @ViewChild("editor") editorView: ElementRef;
-
-  @HostListener('window:keyup', ['$event']) updateEditor(event: KeyboardEvent) {
-    const editorValue = this.editorView.nativeElement.innerText;
-    this.statService.setPage(editorValue);
-  }
+  editorForm = new FormControl();
 
   constructor(private statService: TypingStatsService) { }
 
   ngOnInit(): void {
-
+    this.editorForm.valueChanges.subscribe( ( value ) => {
+      this.statService.pageEmitter.next(value);
+    })
   }
 
 }
